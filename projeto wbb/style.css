@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 40px;
+
+   
+    color: rgb(207, 207, 207);
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    
+}
+#trns{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.68); /* Camada escura */
+    z-index: 1;
+}
+h5{
+
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    color: rgb(207, 207, 207);
+    margin-top: 10px;
+
+
+}
+/* Mudar o estilo da div ou da id do vid somente se necessario*/
+#vid-bg{
+    position: fixed; /*posição fixa na tela, talvez tenha que mudar por questão de compatibilidade*/
+    top: 0;
+    left:0;/*o top e o left no 0 e pra deixar o video "justo na tela"*/
+    height: 100%;/* coloca 100% da tela dealtura */
+    width: 100%; /* coloca 100% da tela de largura */
+    z-index: -1; /* Ensure video stays in the background */
+    object-fit: cover; /* Stretch the video to fill the container */
+    background-color: black;
+    
+}
+
+header a{
+
+    font-size: 1.10em;
+
+}
+
+
+#up-div{
+    
+    padding-top: 0.3em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    line-height: 1;
+    font-size: 1.10em;
+    background-color:rgba(0, 0, 0, 0);
+    font-family: "Poppins";
+    font-optical-sizing: auto;
+    font-style: normal;
+    max-width: 700px;
+    top: 15px;
+    right: 0;
+    z-index: 2;
+    
+    position: fixed;
+}   
+a{ 
+    /* Precisa achar uma maneira de alterar o tamanho da fonte do link somente de um em especifico
+    o "assita o vid" do index */ 
+    font-size: 40px;
+    font-family: "Poppins";
+    text-decoration: none;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    color: whitesmoke;
+}
+a:hover{
+color:rgb(33, 33, 255);
+}
+#texto{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*PRECISA DO FOOTER q apareça so scrollando, vai precisar usa JS*/
