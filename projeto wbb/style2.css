@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: 'FuturaBook';
-    src: url('Fonts/FuturaCyrillicBook.ttf');
-}
-@font-face {
-    font-family: 'FuturaMedium';
-    src: url('Fonts/FuturaCyrillicMedium.ttf');
-}
-@font-face {
-    font-family: 'FuturaHeavy';
-    src: url('Fonts/FuturaCyrillicHeavy.ttf');
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
     margin: 0;
@@ -30,7 +18,7 @@ body, html {
 
 h1{
     font-family: "Poppins",sans-serif;
-    font-size: 40px;
+    font-size: 25px;
 
    
     color: rgb(207, 207, 207);
@@ -123,8 +111,8 @@ a{
 a:hover{
 color:rgb(33, 33, 255);
 }
-#texto{
-
+#texto1{
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -132,12 +120,35 @@ color:rgb(33, 33, 255);
     text-align: center;
     color: aliceblue;
     z-index: 2;
-    width: 95%;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
 
 }
+#texto2{
+    
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#texto2 a{
 
+font-size: 20px;
+
+}
 
 #footer {
     font-family: "Poppins",sans-serif;
@@ -198,25 +209,6 @@ color:rgb(33, 33, 255);
     border-radius: 4px;
 }
 
-#texto1 {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajuste para manter no centro exato */
-    text-align: center; /* Centraliza o texto */
-    z-index: 2; /* Fica acima do fundo e da camada translúcida */
-    width: 60%; /* Adapta para telas menores */
-    background-color: rgba(0, 0, 0, 0.699);
-    margin: 0 auto;
-    color:aliceblue;
-    font-family: "Poppins", sans-serif;
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 25px;
-}
-
-
-
 #cadastroForm button {
     width: 100%;
     padding: 10px;
@@ -236,67 +228,30 @@ color:rgb(33, 33, 255);
     max-width: 600px; 
     padding: 20px;
 }
+#maior, #menor {
+    width: 45%; /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 
-.bulleted-list {
-    list-style: none; /* Remove os marcadores padrão */
-    padding: 0; /* Remove recuo interno */
-    margin: 0 auto; /* Centraliza a lista horizontalmente */
-    display: flex; /* Torna a lista flexível */
-    flex-direction: column; /* Alinha os itens verticalmente */
-    align-items: center; /* Garante que os itens fiquem centralizados */
-    gap: 10px; /* Espaço entre cada item da lista */
-    font-family: "Poppins", sans-serif;
 }
 
-.bulleted-list li {
-    display: flex; /* Permite alinhar o texto ao lado do marcador */
-    align-items: center; /* Alinha o marcador e o texto verticalmente */
-    gap: 10px; /* Espaço entre o marcador e o texto */
-    font-family: 'FuturaBook';
-    font-size: 1em;
-    line-height: 1.5;
-    color: aliceblue;
-    font-family: "Poppins", sans-serif;
+#maior h1, #menor h5 {
+    margin: 0; /* Remove default margin */
+}
+#meio1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(252, 4, 4);
+    z-index: 2;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
 }
 
-.bulleted-list li::before {
-    content: '•'; /* Adiciona os pontos manualmente */
-    font-size: 1.5em;
-    font-family: "Poppins", sans-serif;
-    color: aliceblue; /* Cor dos pontos */
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em; /* Reduz o tamanho dos títulos */
-    }
-
-    p {
-        font-size: 0.9em; /* Ajusta o tamanho dos parágrafos */
-    }
-
-    #up-div {
-        font-size: 0.9em; /* Reduz a fonte da barra de navegação */
-    }
-
-    .icon-text a {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em; /* Ajusta ainda mais para telas muito pequenas */
-    }
-
-    p {
-        font-size: 0.8em;
-    }
-
-    .icon-text a {
-        font-size: 0.8em;
-    }
-}
-
-
-/*PRECISA DO FOOTER q apareça so scrollando, vai precisar usa JS*/
