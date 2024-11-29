@@ -277,11 +277,11 @@ body, html {
 }
 
 #cadastroForm input:focus {
-    border-color: #4CAF50;
+    border-color: rgb(33, 33, 255);
 }
 
 #cadastroForm button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -308,7 +308,7 @@ font-size: 25px;
 
 
 #cadastroForm button:hover {
-    background-color: #45a049;
+    background-color: #0007d2;
 }
 
 #texto h1 {
