@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>1</title>
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>SDG Academy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header><!--essa div e da nav bar, ja ta tudo certinho-->
-    <div id="up-div">
-        <a href="index.html"> Home</a>
-        <a href="pag1.html"> Sobre</a>
-        <a href="pag2.html"> Cursos</a>
-        <a href="pag3.html"> Missão</a>
-        <a href="pag4.html"> Crowndfunding</a>
-        <a href="pag5.html"> Equipe</a>
-        <a href="pag6.html"> Contato</a>
-    </div>
+<body>
+    <header>
+        <div id="up-div">
+            <div id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="pag1.html">Sobre</a>
+                <a href="pag2.html">Cursos</a>
+                <a href="pag3.html">Missão</a>
+                <a href="pag4.html">Crowdfunding</a>
+                <a href="pag5.html">Equipe</a>
+                <a href="pag6.html">Contato</a>
+            </nav>
+        </div>
+    </header>
     
 
-    </header>
-    <body>
-
-
-        <div id="texto1">
+    <div id="div-vid">
+        <video id="vid-bg" autoplay muted loop>
+            <source src="Trailer.mp4" type="video/mp4">
+        </video>
+        <div id="trns"></div>
+        <div id="texto">
             <h1>Conheça Nossa Equipe</h1>
             
             <p>
@@ -35,22 +45,15 @@
                 Junte-se a nós para fazer a diferença! Estamos sempre abertos a colaborações e ideias inovadoras.
             </p>
         </div>
-        
-    
-    <!--essa div e pro vid de fundo-->
-        <div id="div-vid">
-            <video id="vid-bg" autoplay muted loop>
-                <source src="Trailer.mp4" type="video/mp4">
-            </video>
-    
     </div>
-    
-    <div id="trns"></div><!---essa div e pra deixar uma camada translucida preta por questao de estatica ente o video de fundo e 
-    as letras-->
-    
-    
-    </body>
-<footer class="footer">
-    <p>Projeto Web Dev Básico UP 2024</p>
-</footer>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>João Gabriel Kochla, João Gabriel Bender, Victor, Lucas Farias</p>
+            <p>Projeto Web Dev Básico UP 2024</p>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+</body>
 </html>
