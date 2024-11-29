@@ -150,7 +150,21 @@ body, html {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
+#table{
 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+    padding-bottom: 30px;
+    width: 90%;
+
+
+}
 #texto {
     position: absolute;
     top: 50%;
