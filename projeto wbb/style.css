@@ -36,7 +36,11 @@ body, html {
     align-items: center;
     z-index: 10;
 }
-
+#logo{
+    padding: 10px;
+    top:10px;
+    z-index: 10;
+}
 #menu-icon {
     display: none;
     width: 30px;
